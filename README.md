@@ -8,6 +8,7 @@
 
 
 ![thumbnail](./web/src/assets/NLW-eSports.png)
+![thumbnail](./web/src/assets/NLW-eSports-dialog.png)
 
 ## Technologies
 
