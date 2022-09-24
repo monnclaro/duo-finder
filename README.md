@@ -6,7 +6,10 @@
   NLW eSports
 </h3>
 
-<img alt="app" src="./web/src/assets/NlW-eSports"/> <img alt="app" src="./web/src/assets/NlW-eSports-dialog"/>
+
+![thumbnail](./web/src/assets/NlW-eSports)
+![thumbnail](./web/src/assets/NlW-eSports-dialog)
+
 
 ## Technologies
 
