@@ -6,11 +6,11 @@
   NLW eSports
 </h3>
 
-<img alt="app" src="./web/public/NlW-eSports"/> <img alt="app" src="./web/public/NlW-eSports-dialog"/>
+<img alt="app" src="/NlW-eSports"/> <img alt="app" src="/NlW-eSports-dialog"/>
 
 ## Technologies
 
-Technologies that I used to develop this web client
+Technologies that I used to develop this application
 
 - [ReactJS](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
