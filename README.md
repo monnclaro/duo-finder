@@ -7,14 +7,11 @@
 </h3>
 
 
-![thumbnail](./web/src/assets/NlW-eSports)
-![thumbnail](./web/src/assets/NlW-eSports-dialog)
-
+![thumbnail](./web/src/assets/NLW-eSports.png)
 
 ## Technologies
 
-Technologies that I used to develop this application
-
+Technologies that I used to develop this application:
 - [ReactJS](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Prisma](https://www.prisma.io/)
