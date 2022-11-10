@@ -2,10 +2,6 @@
 	<img alt="Logo" src="./web/src/assets/logo-nlw-esports.svg" width="200px" />
 </h1>
 
-<h3 align="center">
-  NLW eSports
-</h3>
-
 
 ![thumbnail](./web/src/assets/NLW-eSports.png)
 ![thumbnail](./web/src/assets/NLW-eSports-dialog.png)
