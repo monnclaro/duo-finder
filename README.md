@@ -9,11 +9,11 @@
 ## Technologies
 
 Technologies that I used to develop this application:
-- [ReactJS](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Prisma](https://www.prisma.io/)
+- [React](https://reactjs.org/)
 - [Axios](https://github.com/axios/axios)
+- [Prisma](https://www.prisma.io/)
 - [Express](https://expressjs.com/pt-br/)
-- [Tailwind](https://tailwindcss.com/)
 - [Radix UI](https://www.radix-ui.com/)
+- [Tailwind](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Phosphor Icons](https://phosphoricons.com/)
