@@ -1,11 +1,11 @@
-<h1 align="center">
+<p align="center">
 	<img alt="Logo" src="./web/src/assets/logo-nlw-esports.svg" width="200px" />
-</h1>
+</p>
 
 ![thumbnail](./web/src/assets/NLW-eSports.png)
 ![thumbnail](./web/src/assets/NLW-eSports-dialog.png)
 
-### Technologies
+## Technologies
 
 Technologies that I used to develop this application:
 
@@ -18,7 +18,7 @@ Technologies that I used to develop this application:
 - [TypeScript](https://www.typescriptlang.org/)
 - [Phosphor Icons](https://phosphoricons.com/)
 
-### Run Local
+## Run Local
 
 Run the following command in both directories to start the application.
 
