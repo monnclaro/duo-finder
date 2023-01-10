@@ -35,18 +35,15 @@ export function CreateAdModal() {
     }
 
     try {
-      const response = await axios.post(
-        `http://localhost:3000/games/${data.game}/ads`,
-        {
-          name: data.name,
-          yearsPlaying: Number(data.yearsPlaying),
-          discord: data.discord,
-          weekDays: weekDays.map(Number),
-          hourStart: data.hourStart,
-          hourEnd: data.hourEnd,
-          useVoiceChannel: useVoiceChannel,
-        }
-      );
+      await axios.post(`http://localhost:3000/games/${data.game}/ads`, {
+        name: data.name,
+        yearsPlaying: Number(data.yearsPlaying),
+        discord: data.discord,
+        weekDays: weekDays.map(Number),
+        hourStart: data.hourStart,
+        hourEnd: data.hourEnd,
+        useVoiceChannel: useVoiceChannel,
+      });
 
       alert("Anúncio criado com sucesso!");
     } catch (err) {
@@ -57,9 +54,9 @@ export function CreateAdModal() {
 
   return (
     <Dialog.Portal>
-      <Dialog.Overlay className="bg-black/60 inset-0 fixed" />
+      <Dialog.Overlay className="fixed inset-0 bg-black/60" />
 
-      <Dialog.Content className="fixed bg-[#2A2634] py-8 px-10 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg w-[480px] shadow-lg shadow-black/25">
+      <Dialog.Content className="fixed top-1/2 left-1/2 w-[480px] -translate-x-1/2 -translate-y-1/2 rounded-lg bg-[#2A2634] py-8 px-10 text-white shadow-lg shadow-black/25">
         <Dialog.Title className="text-3xl font-black">
           Publique um anúncio
         </Dialog.Title>
@@ -72,7 +69,7 @@ export function CreateAdModal() {
             <select
               name="game"
               id="game"
-              className="bg-zinc-900 py-3 px-4 rounded text-sm placeholder:text-zinc-500 appearance-none"
+              className="appearance-none rounded bg-zinc-900 py-3 px-4 text-sm placeholder:text-zinc-500"
               defaultValue=""
             >
               <option disabled value="">
@@ -141,7 +138,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="0"
                   title="Domingo"
-                  className={`w-8 h-8 rounded ${
+                  className={`h-8 w-8 rounded ${
                     weekDays.includes("0") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -150,7 +147,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="1"
                   title="Segunda"
-                  className={`w-8 h-8 rounded ${
+                  className={`h-8 w-8 rounded ${
                     weekDays.includes("1") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -159,7 +156,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="2"
                   title="Terça"
-                  className={`w-8 h-8 rounded ${
+                  className={`h-8 w-8 rounded ${
                     weekDays.includes("2") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -168,7 +165,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="3"
                   title="Quarta"
-                  className={`w-8 h-8 rounded ${
+                  className={`h-8 w-8 rounded ${
                     weekDays.includes("3") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -177,7 +174,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="4"
                   title="Quinta"
-                  className={`w-8 h-8 rounded ${
+                  className={`h-8 w-8 rounded ${
                     weekDays.includes("4") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -186,7 +183,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="5"
                   title="Sexta"
-                  className={`w-8 h-8 rounded ${
+                  className={`h-8 w-8 rounded ${
                     weekDays.includes("5") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -195,7 +192,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="6"
                   title="Sábado"
-                  className={`w-8 h-8 rounded ${
+                  className={`h-8 w-8 rounded ${
                     weekDays.includes("6") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -234,10 +231,10 @@ export function CreateAdModal() {
                   setUseVoiceChannel(false);
                 }
               }}
-              className="w-6 h-6 p-1 rounded bg-zinc-900"
+              className="h-6 w-6 rounded bg-zinc-900 p-1"
             >
               <Checkbox.Indicator>
-                <Check className="w-4 h-4 text-emerald-400" />
+                <Check className="h-4 w-4 text-emerald-400" />
               </Checkbox.Indicator>
             </Checkbox.Root>
             Costumo me conectar ao chat de voz
@@ -246,15 +243,15 @@ export function CreateAdModal() {
           <footer className="mt-4 flex justify-end gap-4">
             <Dialog.Close
               type="button"
-              className="bg-zinc-500 px-5 h-12 rounded-md font-semibold hover:bg-zinc-600"
+              className="h-12 rounded-md bg-zinc-500 px-5 font-semibold hover:bg-zinc-600"
             >
               Cancelar
             </Dialog.Close>
             <button
               type="submit"
-              className="bg-violet-500 px-5 h-12 rounded-md font-semibold flex items-center gap-3 hover:bg-violet-600"
+              className="flex h-12 items-center gap-3 rounded-md bg-violet-500 px-5 font-semibold hover:bg-violet-600"
             >
-              <GameController className="w-6 h-6" />
+              <GameController className="h-6 w-6" />
               Encontrar duo
             </button>
           </footer>

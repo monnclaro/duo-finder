@@ -28,18 +28,18 @@ function App() {
   }, []);
 
   return (
-    <div className="max-w-[1344px] mx-auto flex flex-col items-center my-20 select-none">
+    <div className="mx-auto my-20 flex max-w-[1344px] select-none flex-col items-center">
       <img src={LogoImage} alt="" />
 
-      <h1 className="text-6xl text-white font-black mt-20">
+      <h1 className="mt-20 text-6xl font-black text-white">
         Seu{" "}
-        <span className="text-transparent bg-nlw-gradient bg-clip-text">
+        <span className="bg-nlw-gradient bg-clip-text text-transparent">
           duo
         </span>{" "}
         está aqui.
       </h1>
 
-      <div className="grid grid-cols-6 gap-6 mt-16">
+      <div className="mt-16 grid grid-cols-6 gap-6">
         {games.map((game) => {
           return (
             <GameBanner
